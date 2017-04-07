@@ -2,7 +2,7 @@
   "name": "ng-serve",
   "version": "0.0.1",
   "description": "ExpressJs serving Angular2 app",
-  "main": "serve.js",
+  "main": "client.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
