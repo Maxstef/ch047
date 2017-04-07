@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>AppartmentHouse</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="/manifest.json">
+  <script src="https://cdn.ckeditor.com/4.5.11/full-all/ckeditor.js"></script>
+<link href="styles.ec54c924afd4573fd446.bundle.css" rel="stylesheet"/></head>
+<script>window.__theme = 'bs4';</script>
+<body>
+  <app-root>
+    <div class="text-center loading-spinner">
+      <i class="fa fa-cog fa-spin fa-5x fa-fw"></i>
+      <span class="sr-only">Loading...</span>
+    </div>
+  </app-root>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js', {scope: './'}).then(function (registration) {
+        console.log('Service Worker registered');
+      }).catch(function (err) {
+        console.log('Service Worker registration failed: ', err);
+      });
+    }
+  </script>
+<script type="text/javascript" src="inline.3188ca57e917b7ff8bb4.bundle.js"></script><script type="text/javascript" src="polyfills.47ca3703fde40b74b7a3.bundle.js"></script><script type="text/javascript" src="vendor.8151eea26c29d55346a6.bundle.js"></script><script type="text/javascript" src="main.b401ee1c64876016e7ac.bundle.js"></script></body>
+</html>
