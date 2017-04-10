@@ -1,5 +1,5 @@
 {
-  "api": "http://localhost:9009",
+  "api": "https://osbb-server.herokuapp.com",
 
   "uploadDestinationForBlogs": "blogs",
 
