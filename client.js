@@ -4,16 +4,13 @@ var express = require('express'),
     app = express(),
     path = require('path');
 
-app.use(express.static('dist'));
+app.use(express.static(__dirname + '/dist'));
 app.set('views', path.join(__dirname, 'dist'));
 // app.set('view engine', 'js');
-app.use(function(req, res, next) {
-    if (req.path !== '/')
-        return res.redirect('/user/blogs');
-    next();
-});
-// app.get('/', function(req, res, next) {
-//         // return res.sendfile('dist/index.html', { root: __dirname + '/..' });
+
+// app.use(function(req, res, next) {
+//     if (req.path !== '/')
+//         return res.redirect('/');
 //     next();
 // });
 
