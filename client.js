@@ -9,7 +9,7 @@ app.set('views', path.join(__dirname, 'dist'));
 // app.set('view engine', 'js');
 app.use(function(req, res, next) {
     if (req.path !== '/')
-        return res.redirect('/');
+        return res.redirect('/user/blogs');
     next();
 });
 // app.get('/', function(req, res, next) {
