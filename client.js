@@ -3,7 +3,7 @@
 var express = require('express'),
     app = express(),
     enrouten = require('express-enrouten'),
-    router = app.ROUTES;
+    router = app.ROUTES,
     path = require('path');
 
 app.use(express.static('dist'));
