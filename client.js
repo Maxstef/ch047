@@ -3,15 +3,10 @@
 var express = require('express'),
     app = express(),
     enrouten = require('express-enrouten'),
-    router  = app.ROUTES(),
     path = require('path');
 
 app.use(express.static('dist'));
-app.use('/user', router);
-// app.use(function (req, res, next) {
-//     if (req.url.indexOf('/apple/') !== 0) return next();
-//     router(req, res, next)
-// });
+app.use(enrouten({ directory: 'user' }));
 app.set('views', path.join(__dirname, 'dist'));
 // app.set('view engine', 'js');
 
