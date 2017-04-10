@@ -4,7 +4,7 @@ var express = require('express'),
     app = express(),
     path = require('path');
 
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static('dist'));
 app.set('views', path.join(__dirname, 'dist'));
 // app.set('view engine', 'js');
 
@@ -14,7 +14,7 @@ app.set('views', path.join(__dirname, 'dist'));
 //     next();
 // });
 
-app.get('/', function (req, res) {
+app.get('*', function (req, res) {
     res.sendFile(path.join('dist/index.html'));
 });
 
