@@ -8,14 +8,8 @@ app.use(express.static('dist'));
 app.set('views', path.join(__dirname, 'dist'));
 // app.set('view engine', 'js');
 
-app.use(function(req, res, next) {
-    if (req.path === '/*')
-        return res.redirect('/');
-    next();
-});
-
 app.get('*', function (req, res) {
-    res.sendFile(path.join('dist/index.html'));
+    // res.sendFile(path.join('dist/index.html'));
 });
 
 app.set('port', (process.env.PORT || 5000));
