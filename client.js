@@ -2,9 +2,11 @@
 
 var express = require('express'),
     app = express(),
+    enrouten = require('express-enrouten'),
     path = require('path');
 
 app.use(express.static('dist'));
+app.use(enrouten({ directory: 'dist' }));
 app.set('views', path.join(__dirname, 'dist'));
 // app.set('view engine', 'js');
 
