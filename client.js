@@ -7,7 +7,7 @@ var express = require('express'),
 app.use(express.static('dist'));
 app.set('views', path.join(__dirname, 'dist'));
 // app.set('view engine', 'js');
-app.set("view options", {layout: false});
+// app.set("view options", {layout: false});
 app.use(app.router);
 app.get('/', function (req, res) {
     res.render(path.join('dist/index.html'));
