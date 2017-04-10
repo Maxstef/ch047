@@ -9,7 +9,7 @@ app.set('views', path.join(__dirname, 'dist'));
 // app.set('view engine', 'js');
 
 app.get('*', function (req, res) {
-    // res.sendFile(path.join('dist/index.html'));
+    res.sendFile(path.join('dist/index.html'));
 });
 
 app.set('port', (process.env.PORT || 5000));
