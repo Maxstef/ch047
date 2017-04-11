@@ -2,12 +2,11 @@
 
 var express = require('express'),
     app = express(),
-    path = require('path'),
-    projectRoot = __dirname + '/dist/';
-app.use(express.static(projectRoot));
+    path = require('path');
+app.use(express.static('dist'));
 
 app.get('*', function (req, res) {
-    res.sendFile(path.join(projectRoot + '/index.html'));
+    res.sendFile(path.join('dist/index.html'));
 });
 
 var port = 3009;
