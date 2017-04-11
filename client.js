@@ -3,13 +3,16 @@
 var express = require('express'),
     app = express(),
     path = require('path');
+
 app.use(express.static('dist'));
+app.set('views', path.join(__dirname, 'dist'));
+// app.set('view engine', 'js');
 
 app.get('*', function (req, res) {
-    res.sendFile(path.join('dist/index.html'));
+    res.render(path.join('dist/index.html'));
 });
 
-var port = 3009;
+app.set('port', (process.env.PORT || 5000));
 
-console.log('Server up and running on http://localhost:/' + port);
-app.listen(port);
+console.log('Server up and running on http://localhost:/' + app.get('port'));
+app.listen(app.get('port'));
