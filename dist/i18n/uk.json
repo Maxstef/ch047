@@ -332,5 +332,17 @@
   "COMMENT_UPDATED_TEXT": "Updated ",
   "NO_BLOGS": "На даний момент немає жодного блогу",
   "NO_REQUESTS": "На даний момент немає жодного запиту",
-  "NO_REQUESTS_BY_TYPE": "На даний момент немає жодного запиту за даним типом"
+  "NO_REQUESTS_BY_TYPE": "На даний момент немає жодного запиту за даним типом",
+  "ADMINISTRATORS": "Адміністратори",
+  "USERNAME": "Користувач",
+  "ROLE_NAME": "Роль",
+  "CONFIRM_ADMIN_DELETE": "Видалення адміністратора",
+  "ARE_YOU_SURE_TO_DELETE_ADMINISTRATOR": "Ви впевнені, що хочете видалити адміністратора?",
+  "NO_ITEMS": "Немає даних",
+  "ADD_ADMINISTRATOR": "Додавання адмініcтратора",
+  "EDIT_ADMINISTRATOR": "Редагування адміністратора",
+  "ROLE": "Роль",
+  "MUST_SELECT_ROLE": "Ви повинні вибрати роль",
+  "USERNAME": "Ім'я користувача",
+  "USER_ALREADY_USED": "Ім'я користувача вже зайняте"
 }

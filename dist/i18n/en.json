@@ -212,6 +212,7 @@
   "DONE": "Done",
   "REGISTRATION_DATE": "Registration date",
   "ADRESS": "Address",
+  "ADDRESS": "Address",
   "NAME_SURNAME": "Name, Surname",
   "REQUEST_IS_UPDATED": "Request is updated",
   "SETTING_PASSWORD": "Setting password",
@@ -328,5 +329,17 @@
   "COMMENT_UPDATED_TEXT": "Додано ",
   "NO_BLOGS": "There is no one blog yet",
   "NO_REQUESTS": "There is no one request yet",
-  "NO_REQUESTS_BY_TYPE": "There is no one request from this type yet"
+  "NO_REQUESTS_BY_TYPE": "There is no one request from this type yet",
+  "ADMINISTRATORS": "Administrators",
+  "USERNAME": "Username",
+  "ROLE_NAME": "Role name",
+  "CONFIRM_ADMIN_DELETE": "Deleting administrator",
+  "ARE_YOU_SURE_TO_DELETE_ADMINISTRATOR": "Are you sure you want to delete administrator",
+  "NO_ITEMS": "No items",
+  "ADD_ADMINISTRATOR": "Add administrator",
+  "EDIT_ADMINISTRATOR": "Edit administrator",
+  "ROLE": "Role",
+  "MUST_SELECT_ROLE": "You must select role",
+  "USERNAME": "Username",
+  "USER_ALREADY_USED": "Username already used"
 }

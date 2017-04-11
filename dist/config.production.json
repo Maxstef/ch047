@@ -1,5 +1,5 @@
 {
-  "api": "https://osbb-server.herokuapp.com",
+  "api": "http://localhost:9009",
 
   "uploadDestinationForBlogs": "blogs",
 
@@ -56,11 +56,11 @@
 
   "google.oAuthEndpoint": "https://accounts.google.com/o/oauth2/auth",
   "google.clientId": "clientId",
-  "google.redirectUri": "https://teamproj.herokuapp.com/oauth2callback",
+  "google.redirectUri": "http://localhost:4200/oauth2callback",
 
   "fb.oAuthEndpoint": "https://www.facebook.com/v2.8/dialog/oauth",
   "fb.clientId": "clientId",
-  "fb.redirectUri": "https://teamproj.herokuapp.com/oauth2callback",
+  "fb.redirectUri": "http://localhost:4200/oauth2callback",
 
   "reCaptchaSiteKey": "recaptchaKey"
 }

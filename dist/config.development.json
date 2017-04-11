@@ -12,7 +12,7 @@
 
   "truncateLengthShotBlog" : 300,
 
-  "defaultBlogLogoUrl": "assets/img/default_blog_logo.jpg",
+  "defaultBlogLogoUrl": "./assets/img/default_blog_logo.jpg",
 
   "dateFormat": {
     "month": "MMMM, YYYY",
@@ -27,8 +27,10 @@
   "commentsAndBlog": {
     "throttleInfiniteScroll": 10,
     "scrollDistanceInfiniteScroll": 0.1,
-    "commentsToShowScroll": 5,
-    "timeToEditCommentHours": 12
+    "commentsToShowScrollStep": 5,
+    "timeToEditCommentHours": 12,
+    "defaultAvatar": "./assets/img/default_avatar.png",
+    "commentsToShowScroll": 10
   },
 
   "editorConfig": {

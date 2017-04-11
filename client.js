@@ -2,16 +2,15 @@
 
 var express = require('express'),
     app = express(),
-    path = require('path');
+    path = require('path'),
+    projectRoot = __dirname + '/dist/';
+app.use(express.static(projectRoot));
 
-app.use(express.static('dist'));
-app.set('views', path.join(__dirname, 'dist'));
-// app.set('view engine', 'js');
 app.get('*', function (req, res) {
-    res.render(path.join('dist/index.html'));
+    res.sendFile(path.join(projectRoot + '/index.html'));
 });
 
-app.set('port', (process.env.PORT || 5000));
+var port = 3009;
 
-console.log('Server up and running on http://localhost:/' + app.get('port'));
-app.listen(app.get('port'));
+console.log('Server up and running on http://localhost:/' + port);
+app.listen(port);
